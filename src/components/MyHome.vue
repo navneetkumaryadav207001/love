@@ -11,13 +11,18 @@
       <button class="create-button" @click="this.$router.push('/create')">
         Create
       </button>
+      <InstallButton />
     </div>
   </div>
 </template>
 
 <script>
+import InstallButton from "./InstallButton.vue";
 export default {
   name: "WelcomePage",
+  components: {
+    InstallButton,
+  },
 };
 </script>
 
