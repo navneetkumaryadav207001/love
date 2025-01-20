@@ -22,7 +22,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   overflow-y: hidden;
-  height: 98vh;
+  height: 100vh;
   justify-content: center;
 }
 </style>

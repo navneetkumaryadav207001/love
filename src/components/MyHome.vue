@@ -36,16 +36,21 @@ export default {
 };
 </script>
 
+<style>
+body {
+  margin: 0;
+}
+</style>
+
 <style scoped>
 .welcome-page {
   background-color: #26547c;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-family: Arial, sans-serif;
-  border-radius: 15px;
 }
 
 .decoration-div {
