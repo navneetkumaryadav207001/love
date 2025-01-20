@@ -11,11 +11,16 @@
     <Transition>
       <h2 v-if="check()">{{ this.message }}</h2>
     </Transition>
+    <HomeButton />
   </div>
 </template>
 
 <script>
+import HomeButton from "./HomeButton.vue";
 export default {
+  components: {
+    HomeButton,
+  },
   name: "App",
   data() {
     return {

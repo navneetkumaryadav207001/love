@@ -54,8 +54,8 @@ export default {
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  bottom: 12px;
+  right: 12px;
   border-radius: 50%;
   height: 70px;
   width: 70px;

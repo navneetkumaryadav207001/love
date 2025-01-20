@@ -24,7 +24,7 @@
         autocomplete="new-text"
         spellcheck="false"
       />
-      <h5>Choose the Background:</h5>
+      <h5>Choose a background:</h5>
       <div class="image-container">
         <img
           src="https://img.freepik.com/free-vector/simple-valentines-day-background-with-text-space_1017-35916.jpg"
@@ -49,10 +49,15 @@
       <button @click="copyLink" class="copy-button">Copy Link</button>
     </div>
   </div>
+  <HomeButton />
 </template>
 
 <script>
+import HomeButton from "./HomeButton.vue";
 export default {
+  components: {
+    HomeButton,
+  },
   data() {
     return {
       name: "",
@@ -113,10 +118,14 @@ img {
   margin: 2px;
   border: 1px solid black;
   transition: border 0.05s;
+  border-radius: 15px;
+}
+img:hover {
+  opacity: 50%;
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: #26547c;
   color: black;
 }
 
@@ -149,7 +158,7 @@ body {
   border: 1px solid black;
   background-color: white;
   color: black;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .input-field:hover,
@@ -166,7 +175,7 @@ body {
   color: white;
   border: black solid 1px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .generate-button:hover,
