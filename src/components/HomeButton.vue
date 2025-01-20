@@ -7,6 +7,7 @@ export default {
   methods: {
     redirect() {
       this.$router.push("/");
+      document.querySelector("body").style.backgroundImage = "none";
     },
   },
 };
